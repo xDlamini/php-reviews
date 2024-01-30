@@ -40,7 +40,7 @@
         }
 
         .rating {
-            color: #FFD700; /* Set star color to gold */
+            color: #FFD700; 
             font-size: 24px;
             margin-bottom: 10px;
         }
@@ -75,7 +75,6 @@
     <h1>Google Reviews</h1>
 
     <div class="reviews-container">
-        <!-- Existing reviews will be displayed here -->
         <?php
         $existingReviews = [
             // existing reviews
@@ -126,7 +125,7 @@
                 echo "<a href='{$review['google_account']}' target='_blank'>Google</a>";
             }
 
-            // Display other social links if available
+            // Display other social links
             if (isset($review['social_links'])) {
                 foreach ($review['social_links'] as $link) {
                     echo "<a href='{$link}' target='_blank'>Social</a>";
